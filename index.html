@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <script>
+    function openWhatsapp() {
+            var countryCode = document.getElementById("countryCode");
+            var phoneNumber = document.getElementById("phoneNumber");
+            window.open("https://api.whatsapp.com/send?phone=" + countryCode + phoneNumber);
+        }</script>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
 <body>
 
-<h1>My First Heading</h1>
+<h1>Please enter mobile number to send Whatsapp message</h1>
 
-<p>My first paragraph.</p>
+<div>
+    +<input id="countryCode" value="91"/>
+    <input id="phonenumber" autofocus/>
+    <button id="numberSubmit" name="Submit" onclick="openWhatsapp()">Send Message</button>
+</div>
 
 </body>
 </html>
