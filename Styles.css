@@ -1,3 +1,20 @@
-﻿#countryCode {
-    width: 30px;
+﻿
+body {
+    text-align: center;
 }
+
+#phonenumber {
+    height: 30px;
+    width: 200px;
+}
+
+#countryCode {
+    height: 30px;
+    width: 50px;
+}
+
+button {
+    margin: 20px;
+}
+
+    
